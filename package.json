@@ -1,0 +1,46 @@
+{
+  "name": "factoryai-project-ba4198b0-b41b-43a1-a510-cfbdc120a6d6",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:seed": "prisma db seed"
+  },
+  "dependencies": {
+    "@paypal/react-paypal-js": "^8.9.2",
+    "@prisma/client": "^6.18.0",
+    "@stripe/stripe-js": "^8.2.0",
+    "axios": "^1.13.0",
+    "bcryptjs": "^3.0.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
+    "jsonwebtoken": "^9.0.2",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "stripe": "^19.1.0",
+    "swr": "^2.3.6",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "prisma": "^6.18.0",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  }
+}
